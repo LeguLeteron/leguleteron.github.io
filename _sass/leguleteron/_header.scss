@@ -1,0 +1,48 @@
+
+#siteHeader{
+    z-index: 100;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $height-header;
+    line-height: $height-header;
+    transition: background-color 0.3s ease;
+
+    .wrapper {
+        text-align: center;
+  
+        nav {
+            display: inline-block;
+        }
+    }
+  
+    a {
+        display:inline-block;
+        height: $height-header;
+        padding: 0 10px;
+        color: $color-text;
+        
+        &:hover,
+        &:focus {
+            border-bottom: 2px solid $color-text;
+        }
+    }
+  
+    .site-title {
+        @include relative-font-size(1.2);
+        float:left;
+  
+        .title-link {
+            &:hover,
+            &:focus {
+                border: none;
+            }
+        }
+    }
+  
+    .site-form-wrap {
+        float:right;
+        @include clearfix();
+    }
+}

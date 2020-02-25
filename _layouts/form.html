@@ -1,0 +1,60 @@
+---
+layout: page
+---
+
+<div id="siteForm" class="site-form">
+  <div class="form-wrapper">
+    <h1 class="form-explain"><span class="form-title">{{ site.data.form.title }}</span><span class="form-description"> | {{ site.data.form.description }} </span></h1>
+    <div class="form">
+      <form action="https://formspree.io/{{ site.author.email }}" method="POST">
+        <div class="submitter">
+
+          {% for submitter in site.data.form.submitter -%}
+            {%- if submitter.input.title -%}<h2>{{ submitter.input.title | escape }}</h2>{%- endif -%}
+            <input
+            {%- if submitter.input.type %} type="{{ submitter.input.type }}" {%- endif -%}
+            {%- if submitter.input.name %} class="submitter-{{ submitter.input.name }}" {%- endif -%}
+            {%- if submitter.input.name %} name="{{ submitter.input.name }}" {%- endif -%}
+            {%- if submitter.input.placeholder %} placeholder="{{ submitter.input.placeholder }}" {%- endif -%}
+            {%- if submitter.input.value %} value="{{ submitter.input.value }}" {%- endif -%}
+            {%- if submitter.input.maxlength %} maxlength="{{ submitter.input.maxlength }}" {%- endif -%}
+            {%- if submitter.input.minlength %} minlength="{{ submitter.input.minlength }}" {%- endif -%}
+            {%- if submitter.input.autofocus %} autofocus {%- endif %}
+            {%- if submitter.input.readonly %} readonly {%- endif -%}
+            {%- if submitter.input.required %} required {%- endif -%}
+            />
+          {% endfor %}
+
+          {%- if site.data.form.gotcha -%}
+            <input type="text" class="_gotcha" name="_gotcha" style="display:none" />
+          {% endif %}
+          {%- if site.data.form.subject -%}
+            <input type="hidden" class="_subject" name="_subject" value="{{ site.data.form.subject }}" />
+          {% endif %}
+        </div>
+        <div class="message">
+          {% for message in site.data.form.message -%}
+            {%- if message.textarea.title -%}<h2>{{ message.textarea.title }}</h2>{%- endif -%}
+            <textarea
+            {%- if message.textarea.type %} type="{{ message.textarea.type }}" {%- endif -%}
+            {%- if message.textarea.name %} class="message-{{ message.textarea.name }}" {%- endif -%}
+            {%- if message.textarea.name %} name="{{ message.textarea.name }}" {%- endif -%}
+            {%- if message.textarea.placeholder %} placeholder="{{ message.textarea.placeholder }}" {%- endif -%}
+            {%- if message.textarea.maxlength %} maxlength="{{ message.textarea.maxlength }}" {%- endif -%}
+            {%- if message.textarea.minlength %} minlength="{{ message.textarea.minlength }}" {%- endif -%}
+            {%- if message.textarea.autofocus %} autofocus {%- endif %}
+            {%- if message.textarea.readonly %} readonly {%- endif -%}
+            {%- if message.textarea.required %} required {%- endif -%}
+            style = "
+            {%- if message.textarea.min_height %} min-height: {{ message.textarea.min_height }}; {%- endif -%}
+            {%- if message.textarea.height %} height: {{ message.textarea.height }}; {%- endif -%}
+            {%- if message.textarea.resize %} resize: {{ message.textarea.resize }}; {%- endif -%}
+            "
+            ></textarea>
+          {% endfor %}
+        </div>
+        <button class="submit-button" type="submit">{{ site.data.form.submit_button.title }}</button>
+      </form>
+    </div>
+  </div>
+</div>

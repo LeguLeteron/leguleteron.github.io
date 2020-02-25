@@ -1,0 +1,21 @@
+title: LeguLeteron
+description: "We develop services for the blind"
+
+author:
+  name: "LeguLeteron"
+  link:  "https://github.com/LeguLeteron" # If there is a site that can introduce you, please fill it out.
+  email: "leguleteron.dev@gmail.com"
+  github: "LeguLeteron"
+  facebook: "https://www.facebook.com/leguleteron"
+
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock

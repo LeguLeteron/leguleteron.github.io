@@ -1,0 +1,47 @@
+# form
+title: Contact
+description: 연락을 하고자 한다면 아래의 양식을 제출해주세요.
+subject: Someone just submitted your form on Your awesome title
+gotcha: true
+
+submitter:
+  - input:
+      title: Name
+      type: text
+      name: name
+      placeholder: Your Name
+      value:
+      maxlength:
+      minlength:
+      autofocus: false
+      readonly: false
+      required: false
+
+  - input:
+      title: Email
+      type: email
+      name: email
+      placeholder: Your Email
+      value:
+      maxlength:
+      minlength:
+      autofocus: false
+      readonly: false
+      required: false
+
+message:
+  - textarea:
+      title: Message
+      name: message
+      placeholder: Your Message
+      min_height: 55px;
+      height: 200px
+      resize: vertical
+      maxlength:
+      minlength:
+      autofocus: false
+      readonly: false
+      required: false
+
+submit_button:
+  title: Send Message

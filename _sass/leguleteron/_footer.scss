@@ -1,0 +1,56 @@
+#siteFooter {
+    margin-top: auto;
+    padding: 1em 1em 1em 1em;
+    background-color: $color-primary;
+    color: $color-white;
+
+    .footer-heading {
+        margin-bottom: 1em;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding-bottom: 1.5em;
+        
+        .site-navigation,
+        .site-contact,
+        .site-member {
+            float: left;
+            width: 33.3%;
+
+            p {
+                padding-bottom: 0.8em;
+            }
+
+            li {
+                list-style: none;
+
+                a{
+                    color: $color-grey;
+                    
+                    span {
+                        transition: 0.1s;
+                    }
+
+                    &:hover {
+                        i {
+                            color: $color-white;
+                        }
+
+                        span{
+                            border-bottom: 1px solid $color-white;
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-copyright {
+        padding: 5px 0;
+        text-align: center;
+        @include relative-font-size(0.8);
+        color: $color-grey;
+    }
+}

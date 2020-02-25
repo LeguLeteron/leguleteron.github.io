@@ -1,0 +1,63 @@
+<footer id="siteFooter" class="site-footer">
+    <div class=wrapper>
+        <h3 class="footer-heading">{{ site.title }}</h3>
+        <div class="site-navigation">
+            <p>
+                <strong>Site Map</strong>
+            </p>
+            <ul class="pages">
+                {% for nav in site.data.sitemap %}
+                <li class="nav-link">
+                    <a href="{{ nav.link }}"><span>{{ nav.title }}</span></a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="site-contact">
+            <p>
+                <strong>Contact</strong>
+            </p>
+            <ul class="social-media-list">
+                {% if site.author.email %}
+                <li>
+                    <a href="mailto:{{site.author.email}}">
+                        <i class="icon-mail"></i>
+                        <span class="username">{{site.author.email}}</span>
+                    </a>
+                </li>
+                {% endif %}
+                {% if site.author.github %}
+                <li>
+                    <a href="https://github.com/{{ site.author.github }}">
+                        <i class="icon-github-circled"></i>
+                        <span class="username">github</span>
+                    </a>
+                </li>
+                {% endif %}
+                {% if site.author.facebook %}
+                <li>
+                    <a href="{{ site.author.facebook }}">
+                        <i class="icon-facebook"></i>
+                        <span class="username">facebook</span>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+        <div class="site-member">
+            <p>
+                <strong>Member</strong>
+                <ul class="member-list">
+                    {% for member in site.data.members %}
+                    <li>
+                        <a href="{{member.link}}">
+                            <span class="username">{{member.name}}</span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </p>
+        </div>
+    </div>
+    <div class="footer-copyright wrapper">&copy; {{ site.time | date: '%Y' }} {{ site.author.name | default: site.title | escape }}. All rights reserved</div>
+</footer>

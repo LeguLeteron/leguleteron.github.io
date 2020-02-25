@@ -1,0 +1,32 @@
+<!-- Header -->
+<header id="siteHeader" clss="site-header">
+
+    <div class="wrapper">
+      <div id="siteTitle" class="site-title">
+        <a class="title-link" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+      </div>
+  
+      <nav id="siteNav" class="site-nav">
+        <h2 class="screen-out">{{ site.title | escape }} Main Menu</h2>
+        <div class="nav-list">
+          {%- for pagel in site.pages -%}
+            {% if pagel.layout == 'page' %}
+              <a href="{{ pagel.permalink }}" class="nav-link">{{ pagel.title | capitalize }}</a>
+            {% endif %}
+          {%- endfor %}
+          <a href="/blog/" class="nav-link">Blog</a>
+        </div>
+      </nav>
+  
+      <div id="siteFormWrap" class="site-form-wrap">
+        <h2 class="screen-out"> {{ site.data.form.title | escape }} </h2>
+        {%- for form in site.pages -%}
+          {%- if form.layout == 'form' -%}
+            <a class="form-link" href="{{ form.permalink }}">{{ site.data.form.title | escape }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </header>
+
+  <script src="{{ '/assets/js/header.js' | relative_url }}"></script>

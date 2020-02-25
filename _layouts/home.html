@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+<div id="siteHome" class="site-home">
+  <div class="main-slide-wrap">
+    <div class="main-slides">
+      {% for slides in site.data.home.mainSlide %}
+      <div class="main-slide" style="{% if slides.background.color %}background-color: {{ slides.background.color }};{% endif %}{% if slides.background.image %}background-image: url('{{ site.baseurl | default: '/' }}assets/image/{{ slides.background.image }}');{% endif %}">
+        <div class="wrapper">
+        <h2 class="main-slide-title" style="{{ slides.title.style }}">{{ slides.title.text | escape }}</h2>
+        <p class="main-slide-description" style="{{ slides.description.style }}">{{ slides.description.text | escape }}</p>
+        <a class="main-slide-link" href="{{ slides.link.href | default: '#' }}" style="{{ slides.link.style }}">See More &#8594;</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <a class="main-prev" onclick="mainSlideIndexPlus(-1)">&#10094;</a>
+    <a class="main-next" onclick="mainSlideIndexPlus(1)">&#10095;</a>
+
+
+    <div class="main-dot-wrap">
+      {% for slides in site.data.home.mainSlide %}
+        <span class="main-dot" onclick="setMainSlideIndex( {{ slides.order  }} -1)"></span>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="section-wrap">
+    <section class="section-about-wrap wrapper">
+      <div class="section-about">
+        <h1 class="section-main-title">{{  site.data.home.sectionAbout.title  }}</h1>
+        <p class="section-sub-title">{{  site.data.home.sectionAbout.description  }}</p>
+        
+        <div class="goal-wrap">
+          {% for goal in site.data.home.sectionAbout.goal %}
+          <div class="about-goal">
+            <h2>{{ goal.title }}</h2>
+            <p>{{ goal.content }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="section-timeline">
+      <div class="section-banner" style="{% if site.data.home.sectionTimeline.background.color %}background-color: {{ site.data.home.sectionTimeline.background.color }};{% endif %}{% if site.data.home.sectionTimeline.background.image %}background-image: url('{{ site.baseurl | default: '/' }}assets/image/{{ site.data.home.sectionTimeline.background.image }}');{% endif %}">
+        <div class="wrapper">
+          <h2 style="{% if site.data.home.sectionTimeline.color %}color:{{ site.data.home.sectionTimeline.color }}{% endif %}">{{ site.data.home.sectionTimeline.title }}</h2>
+          <p style="{% if site.data.home.sectionTimeline.color %}color:{{ site.data.home.sectionTimeline.color }}{% endif %}">{{ site.data.home.sectionTimeline.description }}</p>
+          <a href="/blog">See more</a>
+        </div>
+      </div>
+      <div class="wrapper timeline-wrap">
+        {% for timeline in site.data.home.sectionTimeline.content %}
+        <div class="timeline-item-wrap  {{ timeline.direction }}">
+          <div class="timeline-content">
+            <div class="date">{{ timeline.date }}</div>
+            <h2 class="title">{{ timeline.title }}</h2>
+            <p class="description">{{ timeline.description }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="section-contact">
+      <div class="section-banner" style="{% if site.data.home.sectionContact.background.color %}background-color: {{ site.data.home.sectionContact.background.color }};{% endif %}{% if site.data.home.sectionContact.background.image %}background-image: url('{{ site.baseurl | default: '/' }}assets/image/{{ site.data.home.sectionContact.background.image }}');{% endif %}">
+        <div class="wrapper">
+          <h2 style="{% if site.data.home.sectionContact.color %}color:{{ site.data.home.sectionContact.color }}{% endif %}">{{ site.data.home.sectionContact.title }}</h2>
+          <p style="{% if site.data.home.sectionContact.color %}color:{{ site.data.home.sectionContact.color }}{% endif %}">{{ site.data.home.sectionContact.description }}</p>
+          <a href="/contact">연락하기</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="{{ '/assets/js/home.js' | relative_url }}"></script>
+</div>

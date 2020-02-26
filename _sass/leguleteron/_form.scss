@@ -1,0 +1,69 @@
+#siteForm {
+    input, textarea {
+        min-width : 100%;
+        color: $color-text;
+        border-radius: 5px;
+        padding: 15px;
+        border: 1px solid #cfcfcf;
+
+        &::placeholder{
+            @include relative-font-size(0.9);
+            color: $color-grey;
+        }
+    }
+
+    input {
+        margin:10px 0;
+        display: block;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        @include relative-font-size(0.9);
+        color: $color-grey;
+    }
+
+    button {
+        cursor: pointer;
+        display: block;
+    }
+
+
+    .submit-button {
+        @include relative-font-size(0.9);
+        margin-top: 20px;
+        display: inline-block;
+        background-color: #efefef;
+        padding: 8px 12px;
+        color: #1e1e1e;
+        border: none;
+
+
+        &:hover {
+            background-color: #1e1e1e;
+            color: #efefef;
+        }
+    }
+
+    .submitter,
+    .message {
+        h2 {
+        @include relative-font-size(0.9);
+        margin: 0;
+        }
+    }
+
+    .message {
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+
+    .form-title {
+        @include relative-font-size(1.5);
+    }
+
+    .form-description {
+        @include relative-font-size(1);
+    }
+}

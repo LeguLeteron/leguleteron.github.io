@@ -1,34 +1,38 @@
 @charset "utf-8";
 @import "font";
 
-$base-font-family:   'NanumBarunpen', 'NanumBarunGothic', 'NanumGothic', sans-serif !default;
-$base-font-size:     18px !default;
-$base-font-weight:   400 !default;
-$base-line-height:   1.5 !default;
+$base-font-family:       'NanumBarunpen', 'NanumBarunGothic', 'NanumGothic', sans-serif !default;
+$base-font-size:         18px !default;
+$base-font-weight:       400 !default;
+$base-line-height:      1.5 !default;
 
-$color-primary:      #1e1e1e !default;
-$color-primary-dark: #000000 !default;
-$color-accent:       #ffffff !default;
-$color-grey:         #828282 !default;
-$color-grey-light:   lighten($color-grey, 40%) !default;
-$color-grey-dark:    darken($color-grey, 25%) !default;
-$color-white:        #ffffff !default;
+$color-primary:         #1e1e1e !default;
+$color-primary-dark:    #000000 !default;
+$color-accent:          #ffffff !default;
+$color-highlight:       #ffd900 !default;
+$color-highlight-base:  #000000 !default;
+$color-grey:            #828282 !default;
+$color-grey-light:      lighten($color-grey, 40%) !default;
+$color-grey-dark:       darken($color-grey, 25%) !default;
+$color-white:           #ffffff !default;
 
-$color-text:         $color-primary !default;
-$color-background:   $color-white !default;
+$color-text:            $color-primary !default;
+$color-background:      $color-white !default;
 
-$table-text-align:   center !default;
-$spacing-unit:       80px !default;
-$height-header:      $spacing-unit !default;
+$table-text-align:      center !default;
+$spacing-unit:          80px !default;
+
+$height-header:         $spacing-unit !default;
+$height-cover:          $spacing-unit * 4 !default;
 
 // Width of the content area
-$content-width:      60em !default;
+$content-width:         60em !default;
 
-$on-palm:            600px !default;
-$on-laptop:          1300px !default;
+$on-palm:               600px !default;
+$on-laptop:             1300px !default;
 
-$on-medium:          $on-palm !default;
-$on-large:           $on-laptop !default;
+$on-medium:             $on-palm !default;
+$on-large:              $on-laptop !default;
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {

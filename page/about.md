@@ -2,17 +2,60 @@
 layout: page
 title: About
 permalink: /about/
+cover:
+    background:
+        image:
+        color: '#eee'
+    color: '#1e1e1e'
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# We are LeguLeteron
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+안녕하세요, 시각장애인을 위한 서비스를 개발하는 LeguLeteron 팀입니다. 
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+<br>
 
+LeguLeteron은 봉사 등의 활동을 하는 대덕소프트웨어마이스터고등학교의 창체동아리 가온누리로부터 시작되었습니다. 가온누리 활동 중 시각장애인이 웹 서핑 등의 작업을 위해서 사용하는 점자 보조 도구의 가격이 일반적으로 사용하기에 매우 높다는 것을 알게 되었고 여기서 저렴하게 사용할 수 있는 점자 보조 도구 및 웹 서핑을 도와주는 크롬 확장 프로그램으로 2019년 STA+C에서 우수상을 수상하였습니다. 
 
-[jekyll-organization]: https://github.com/jekyll
+<br>
+
+2020년부터는 LeguLeteron의 목표를 확장하여 시각장애인이라면 누구나 혜택을 받을 수 있고, 누구나 시각장애인을 이해할 수 있고, 시각장애라는 이유로 꿈을 포기하지 않도록 도와주는 서비스를 개발해 나갈 예정입니다.
+
+## Our Goals
+> 누구나 혜택을 받을 수 있도록
+
+<br>
+
+인터넷이라는 것은 우리에게 있어 막대한 양의 정보를 손쉽게 얻을 수 있도록 하였습니다. 그러나 시각장애인은 그러한 혜택에 있어서 벗어나 있었고, 보조 도구 역시 높은 비용으로 누구나 사용하기에는 어려움이 있었습니다. LeguLeteron은 여기에서 시작하여 적은 비용으로 시각장애인이라면 누구나 누릴 수 있는 서비스를 만들어 나가고자 합니다.
+
+<br>
+
+> 누구나 이해할 수 있도록
+
+<br>
+
+비장애인의 시각장애인에 대한 인식은 시각장애인에 대한 현실과는 다른 점이 종종 있습니다. 우리는 누구나 시각장애인이라면 점자를 알 것이라고 생각하지만 현실 속의 비율은 매우 적은 비율에 불과합니다. 우리는 시각장애인이 가진 어려움을 알리고 시각장애인에 대한 인식을 바꾸고자 합니다. 누구나 시각장애인을 이해할 수 있도록 하는 서비스를 만들어 나갈 것입니다.
+
+<br>
+
+> 누구나 다시 도전할 수 있도록
+
+<br>
+
+누구나 꿈을 꿀 수 있고 누구나 그 꿈을 이룰 수 있습니다. 그리고 누구에게나 꿈을 이루는 과정에서 시련이 찾아옵니다. 시련을 이겨낼 수도 있지만 시련이 너무나 커 포기할 수도 있습니다. LeguLeteron은 시각 장애라는 이유로 꿈을 포기하게 된 이들이 다시 한번 도전할 수 있도록 하는 서비스를 만들어 나가고 말 것입니다.
+
+## We need ...
+
+LeguLeteron은 '누구나' 라는 목표에 맞게 모든 서비스를 오픈소스로 개발하고 있습니다. HW의 경우에도 모든 자료를 공개하고 있습니다. 
+
+<br>
+
+우리는 현재 학생의 신분으로 배우면서 개발을 이어 가고 있습니다. 그렇기에 부족한 부분이 다수 존재할 수 있습니다.
+
+<br>
+
+서비스를 이용하면서 부족한 점이나 느낀 점 등의 피드백, 아이디어 제공 등의 도움을 주시면 더 나은 서비스를 만들 수 있습니다.
+
+<br>
+
+도움을 주시고자 한다면 이곳을 통해 연락 주세요 : [Contact](/contact)

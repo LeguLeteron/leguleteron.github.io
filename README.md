@@ -8,7 +8,7 @@
 
 ```bash
 $ git clone git@github.com/LeguLeteron/leguleteron.github.io.git
-$ cd kakao.github.io
+$ cd leguleteron.github.io
 $ bundle install
 ```
 

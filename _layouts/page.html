@@ -2,9 +2,9 @@
 layout: default
 ---
 <div id="sitePage" class="site-page">
-<div class="page-cover" style="{% if page.cover.background.color %}background-color:{{ page.cover.background.color }};{% endif %}{% if page.cover.background.image %}background-image: url('{{ site.baseurl | default: '/' }}assets/image/{{ page.cover.background.image }}');{% endif %}">
+<div class="page-cover" style="{% if page.cover.background.color %}background-color:{{ page.cover.background.color }};{% endif %}{% if page.cover.background.image %}background-image: url('{{ site.baseurl | default: '/' }}assets/images/{{ page.cover.background.image }}');{% endif %}">
     <div class="page-head">
-    <h1 id="pageTitle" class="page-title" style="{% if page.covercolor %}color:{{ page.cover.color}};border-bottom: 2px solid {{ page.cover.color }};{% endif %}">{{ page.title | default: 'Hello Everyone' | escape }}</h1>
+    <h1 id="pageTitle" class="page-title" style="{% if page.cover.color %}color:{{ page.cover.color}};border-bottom: 2px solid {{ page.cover.color }};{% endif %}">{{ page.title | default: 'Hello Everyone' | escape }}</h1>
       {% if page.description %}
         <p id="pageDescription" class="page-description">{{ page.description | escape }}</p>
       {% endif %}

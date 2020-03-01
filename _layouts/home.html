@@ -6,7 +6,7 @@ layout: default
   <div class="main-slide-wrap">
     <div class="main-slides">
       {% for slides in site.data.home.mainSlide %}
-      <div class="main-slide" style="{% if slides.background.color %}background-color: {{ slides.background.color }};{% endif %}{% if slides.background.image %}background-image: url('{{ site.baseurl | default: '/' }}assets/image/{{ slides.background.image }}');{% endif %}">
+      <div class="main-slide" style="{% if slides.background.color %}background-color: {{ slides.background.color }};{% endif %}{% if slides.background.image %}background-image: url('{{ site.baseurl | default: '/' }}assets/images/{{ slides.background.image }}');{% endif %}">
         <div class="wrapper">
         <h2 class="main-slide-title" style="{{ slides.title.style }}">{{ slides.title.text | escape }}</h2>
         <p class="main-slide-description" style="{{ slides.description.style }}">{{ slides.description.text | escape }}</p>
@@ -44,7 +44,7 @@ layout: default
     </section>
 
     <section class="section-timeline">
-      <div class="section-banner" style="{% if site.data.home.sectionTimeline.background.color %}background-color: {{ site.data.home.sectionTimeline.background.color }};{% endif %}{% if site.data.home.sectionTimeline.background.image %}background-image: url('{{ site.baseurl | default: '/' }}assets/image/{{ site.data.home.sectionTimeline.background.image }}');{% endif %}">
+      <div class="section-banner" style="{% if site.data.home.sectionTimeline.background.color %}background-color: {{ site.data.home.sectionTimeline.background.color }};{% endif %}{% if site.data.home.sectionTimeline.background.image %}background-image: url('{{ site.baseurl | default: '/' }}assets/images/{{ site.data.home.sectionTimeline.background.image }}');{% endif %}">
         <div class="wrapper">
           <h2 style="{% if site.data.home.sectionTimeline.color %}color:{{ site.data.home.sectionTimeline.color }}{% endif %}">{{ site.data.home.sectionTimeline.title }}</h2>
           <p style="{% if site.data.home.sectionTimeline.color %}color:{{ site.data.home.sectionTimeline.color }}{% endif %}">{{ site.data.home.sectionTimeline.description }}</p>
@@ -65,7 +65,7 @@ layout: default
     </section>
 
     <section class="section-contact">
-      <div class="section-banner" style="{% if site.data.home.sectionContact.background.color %}background-color: {{ site.data.home.sectionContact.background.color }};{% endif %}{% if site.data.home.sectionContact.background.image %}background-image: url('{{ site.baseurl | default: '/' }}assets/image/{{ site.data.home.sectionContact.background.image }}');{% endif %}">
+      <div class="section-banner" style="{% if site.data.home.sectionContact.background.color %}background-color: {{ site.data.home.sectionContact.background.color }};{% endif %}{% if site.data.home.sectionContact.background.image %}background-image: url('{{ site.baseurl | default: '/' }}assets/images/{{ site.data.home.sectionContact.background.image }}');{% endif %}">
         <div class="wrapper">
           <h2 style="{% if site.data.home.sectionContact.color %}color:{{ site.data.home.sectionContact.color }}{% endif %}">{{ site.data.home.sectionContact.title }}</h2>
           <p style="{% if site.data.home.sectionContact.color %}color:{{ site.data.home.sectionContact.color }}{% endif %}">{{ site.data.home.sectionContact.description }}</p>

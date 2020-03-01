@@ -4,9 +4,9 @@ title: Service
 permalink: /service/
 cover:
     background:
-        image:
+        image: 'PageCover.png'
         color: '#eee'
-    color: '#1e1e1e'
+    color: '#fff'
 ---
 
 # Our Service

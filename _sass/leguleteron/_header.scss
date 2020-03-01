@@ -7,7 +7,7 @@
     width: 100%;
     height: $height-header;
     line-height: $height-header;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
 
     .wrapper {
         text-align: center;
@@ -21,11 +21,11 @@
         display:inline-block;
         height: $height-header;
         padding: 0 10px;
-        color: $color-text;
+        color: $color-white;
         
         &:hover,
         &:focus {
-            border-bottom: 2px solid $color-text;
+            border-bottom: 3px solid $color-text;
         }
     }
   

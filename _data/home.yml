@@ -1,57 +1,18 @@
 # Main Slide
 mainSlide:
   - title: 
-      text: LeguLeteron1
-      style: 
+      text: LeguLeteron은 시각장애인을 위한 서비스를 개발합니다
+      style: 'color:#fff;'
     description: 
-      text: Hello
-      style:
+      text: 시작은 작게, 하지만 끝은 행복으로.
+      style: 'color:#fff;'
     link: 
-      href: '#'
+      href: '/about'
       style: 
     background:
-      image:
+      image: 'MainCover1.png'
       color: '#eee'
     order: 1
-  - title: 
-      text: LeguLeteron2
-      style: 
-    description: 
-      text: Hello
-      style:
-    link: 
-      href: '#'
-      style: 
-    background:
-      image:
-      color:  '#ddd'
-    order: 2
-  - title: 
-      text: LeguLeteron3
-      style: 
-    description: 
-      text: Hello
-      style:
-    link: 
-      href: '#'
-      style: 
-    background:
-      image:
-      color:  '#aaa'
-    order: 3
-  - title: 
-      text: LeguLeteron3
-      style: 
-    description: 
-      text: Hello
-      style:
-    link: 
-      href: '#'
-      style: 
-    background:
-      image:
-      color:  '#999'
-    order: 4
 
 # Section
 ## Section About
@@ -80,24 +41,24 @@ sectionTimeline:
   title: 'LeguLeteron의 활동'
   description: '더 나은 서비스를 위해 늘 노력합니다'
   background:
-    image:
+    image: 'PageCover.png'
     color: '#eee'
-  color: '#1e1e1e'
+  color: '#fff'
   content:
-    - date: 2020.01.01
+    - date: 2019.11.08
       direction: left
-      title: '시작'
+      title: 'LeguLeteron, STA+C 우수상'
       description: >-
-        안녕
-    - date: 2020.01.01
+        2019 STA+C에서 시각장애인의 웹 이용환경을 위한 크롬 확장 프로그램 및 점자 보조 도구로 우수상 수상
+    - date: 2020.02.23
       direction: right
-      title: '시작'
+      title: '새로운 시작'
       description: >-
-        안녕
+        시각장애인을 위한 서비스를 개발하기 위해 모여 새롭게 LeguLeteron 팀 구성
 sectionContact:
   title: '연락하기'
   description: 'LeguLeteron에게 도움을 주고자 한다면'
   background:
-    image:
+    image: 'PageCover.png'
     color: '#eee'
-  color: '#1e1e1e'
+  color: '#fff'
